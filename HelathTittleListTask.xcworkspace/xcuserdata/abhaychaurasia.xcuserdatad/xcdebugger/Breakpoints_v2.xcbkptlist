@@ -3,4 +3,164 @@
    uuid = "9CFB0743-33EF-482A-A646-B87083A0DD44"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99176C0B-B67C-4841-99FA-60A5BA01DBF8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HelathTittleListTask/Controller/HealthtittleDesVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "loadDescription()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F867BBA-1C18-4522-A2A5-099701351171"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HelathTittleListTask/Controller/HealthtittleDesVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "setData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4F867BBA-1C18-4522-A2A5-099701351171 - e0c1ed362b6a41f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HelathTittleListTask.HealthtittleDesVC.setData() -&gt; ()"
+                  moduleName = "HelathTittleListTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaychaurasia/Documents/HelathTittleListTask/HealthCare/HelathTittleListTask/Controller/HealthtittleDesVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "4F867BBA-1C18-4522-A2A5-099701351171 - e0c1ed362b6a41f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HelathTittleListTask.HealthtittleDesVC.setData() -&gt; ()"
+                  moduleName = "HelathTittleListTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaychaurasia/Documents/HelathTittleListTask/HealthCare/HelathTittleListTask/Controller/HealthtittleDesVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8B2CA80-B31F-4CE1-AEBE-615D1DCAFF24"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HelathTittleListTask/ViewModel/HealthDesVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fetchHealthDes(id:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E8B2CA80-B31F-4CE1-AEBE-615D1DCAFF24 - 75a6d93cf49bb4c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;HelathTittleListTask.HealthtittlDesModel, Swift.Error&gt;) -&gt; () in HelathTittleListTask.HealthDesViewModel.fetchHealthDes(completion: (HelathTittleListTask.RequestStatus) -&gt; ()) -&gt; ()"
+                  moduleName = "HelathTittleListTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaychaurasia/Documents/HelathTittleListTask/HealthCare/HelathTittleListTask/ViewModel/HealthDesVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1712">
+               </Location>
+               <Location
+                  uuid = "E8B2CA80-B31F-4CE1-AEBE-615D1DCAFF24 - 75a6d93cf49bb40b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;HelathTittleListTask.HealthtittlDesModel, Swift.Error&gt;) -&gt; () in HelathTittleListTask.HealthDesViewModel.fetchHealthDes(completion: (HelathTittleListTask.RequestStatus) -&gt; ()) -&gt; ()"
+                  moduleName = "HelathTittleListTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaychaurasia/Documents/HelathTittleListTask/HealthCare/HelathTittleListTask/ViewModel/HealthDesVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1712">
+               </Location>
+               <Location
+                  uuid = "E8B2CA80-B31F-4CE1-AEBE-615D1DCAFF24 - 75a6d93cf49bb4e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;HelathTittleListTask.HealthtittlDesModel, Swift.Error&gt;) -&gt; () in HelathTittleListTask.HealthDesViewModel.fetchHealthDes(completion: (HelathTittleListTask.RequestStatus) -&gt; ()) -&gt; ()"
+                  moduleName = "HelathTittleListTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaychaurasia/Documents/HelathTittleListTask/HealthCare/HelathTittleListTask/ViewModel/HealthDesVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "2064">
+               </Location>
+               <Location
+                  uuid = "E8B2CA80-B31F-4CE1-AEBE-615D1DCAFF24 - 75a6d93cf49bb428"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;HelathTittleListTask.HealthtittlDesModel, Swift.Error&gt;) -&gt; () in HelathTittleListTask.HealthDesViewModel.fetchHealthDes(completion: (HelathTittleListTask.RequestStatus) -&gt; ()) -&gt; ()"
+                  moduleName = "HelathTittleListTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaychaurasia/Documents/HelathTittleListTask/HealthCare/HelathTittleListTask/ViewModel/HealthDesVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "1712">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E4D146F-EDE1-457B-A117-5E5676323500"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HelathTittleListTask/ViewModel/HealthDesVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "cellForRowAt()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

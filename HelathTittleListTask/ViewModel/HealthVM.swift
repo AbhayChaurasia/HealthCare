@@ -6,7 +6,7 @@
 //
 
 import Foundation
-typealias JsonFeedCompletionHandler = (RequestStatus) -> Void
+typealias JsonHealthCompletionHandler = (RequestStatus) -> Void
 
 enum RequestStatus{
     case NetworkError
@@ -17,11 +17,11 @@ enum RequestStatus{
 class HealthViewModel {
     
     private var networkWorker = NetworkWorker()
-    private var factsData = [Item]()
+    private var tittleData = [Item]()
     private var title = ""
     
     // MARK: - Method to fetch Rows from Json Feed
-    func fetchFactsRows(completion: @escaping JsonFeedCompletionHandler = { _ in }) {
+    func fetchHealthTittleRows(completion: @escaping JsonHealthCompletionHandler = { _ in }) {
         //!NetworkStatus.sharedInstance.hasConnectivity()
         
         if !(InternetConnectionManager.shared.isInternetAvailable())  {
@@ -32,11 +32,11 @@ class HealthViewModel {
             networkWorker.getFactsJsonFeed(urlString: url) { [weak self] (result) in
                 switch result {
                 case .success(let listOf) :
-                    self?.factsData.removeAll()
+                    self?.tittleData.removeAll()
                     if let tittle = listOf.result?.items?.item {
                         for row in tittle {
                             //   if let  row  = row {
-                            self?.factsData.append(row)
+                            self?.tittleData.append(row)
                             //  }
                         }
                     }
@@ -55,7 +55,7 @@ class HealthViewModel {
     }
     func resetDataSource() {
         self.title = ""
-        self.factsData.removeAll()
+        self.tittleData.removeAll()
     }
     
     // MARK: - Get Title
@@ -65,15 +65,15 @@ class HealthViewModel {
     
     // MARK: - Get Number of Rows
     func numberOfRowsInSection(section: Int) -> Int {
-        if factsData.count != 0 {
-            return factsData.count
+        if tittleData.count != 0 {
+            return tittleData.count
         }
         return 0
     }
     
     // MARK: - Set Data for Cell
     func cellForRowAt (indexPath: IndexPath) -> Item {
-        return factsData[indexPath.row]
+        return tittleData[indexPath.row]
     }
     
     

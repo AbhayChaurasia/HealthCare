@@ -82,9 +82,9 @@ class NetworkWorker {
             guard let properData = dataInString.data(using: .utf8, allowLossyConversion: true) else { return }
             
             do {
-                //print(properData)
+          //      print(properData)
                 let jsonData = try JSONDecoder().decode(HealthtittlDesModel.self, from: properData)
-                //print(jsonData)
+               print(jsonData)
                 DispatchQueue.main.async {
                     completion(.success(jsonData))
                 }

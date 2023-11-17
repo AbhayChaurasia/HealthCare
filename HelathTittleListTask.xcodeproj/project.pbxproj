@@ -24,6 +24,8 @@
 		C7F74F032B07E1BB008267A9 /* HealthDesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F74F022B07E1BB008267A9 /* HealthDesVM.swift */; };
 		C7F74F052B07E2A2008267A9 /* HealthtittleDesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F74F042B07E2A2008267A9 /* HealthtittleDesVC.swift */; };
 		C7F74F072B07E48F008267A9 /* HealthTittleDesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F74F062B07E48F008267A9 /* HealthTittleDesModel.swift */; };
+		C7F74F0A2B080E54008267A9 /* StringExtenison.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F74F092B080E54008267A9 /* StringExtenison.swift */; };
+		C7F74F0E2B081524008267A9 /* Uiview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F74F0D2B081524008267A9 /* Uiview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		C7F74F022B07E1BB008267A9 /* HealthDesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDesVM.swift; sourceTree = "<group>"; };
 		C7F74F042B07E2A2008267A9 /* HealthtittleDesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthtittleDesVC.swift; sourceTree = "<group>"; };
 		C7F74F062B07E48F008267A9 /* HealthTittleDesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTittleDesModel.swift; sourceTree = "<group>"; };
+		C7F74F092B080E54008267A9 /* StringExtenison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtenison.swift; sourceTree = "<group>"; };
+		C7F74F0D2B081524008267A9 /* Uiview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uiview.swift; sourceTree = "<group>"; };
 		D22BCEA848F71C12C0C2278F /* Pods_HelathTittleListTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelathTittleListTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C160E06DD15EFDC1465907 /* Pods-HelathTittleListTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelathTittleListTask.release.xcconfig"; path = "Target Support Files/Pods-HelathTittleListTask/Pods-HelathTittleListTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,11 +87,12 @@
 		C7F74ED72B07AD74008267A9 /* HelathTittleListTask */ = {
 			isa = PBXGroup;
 			children = (
-				C7F74EFF2B07CADE008267A9 /* Controller */,
-				C7F74EFA2B07B652008267A9 /* ViewModel */,
 				C7F74EF72B07B5D4008267A9 /* Model */,
+				C7F74EFA2B07B652008267A9 /* ViewModel */,
+				C7F74EFF2B07CADE008267A9 /* Controller */,
 				C7F74EF42B07B54D008267A9 /* NetworkingClass */,
 				C7F74EF12B07B496008267A9 /* Constant */,
+				C7F74F082B080E38008267A9 /* Extension */,
 				C7F74ED82B07AD74008267A9 /* AppDelegate.swift */,
 				C7F74EDA2B07AD74008267A9 /* SceneDelegate.swift */,
 				C7F74EE42B07AD76008267A9 /* Assets.xcassets */,
@@ -142,6 +147,15 @@
 				C7F74F042B07E2A2008267A9 /* HealthtittleDesVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		C7F74F082B080E38008267A9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C7F74F092B080E54008267A9 /* StringExtenison.swift */,
+				C7F74F0D2B081524008267A9 /* Uiview.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		E514D3D6D6AFE7FC596C9CA3 /* Pods */ = {
@@ -275,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F74F0E2B081524008267A9 /* Uiview.swift in Sources */,
 				C7F74F052B07E2A2008267A9 /* HealthtittleDesVC.swift in Sources */,
 				C7F74EF92B07B5E9008267A9 /* HealtTittleList.swift in Sources */,
 				C7F74F072B07E48F008267A9 /* HealthTittleDesModel.swift in Sources */,
@@ -283,6 +298,7 @@
 				C7F74EF32B07B4AD008267A9 /* ApiConstant.swift in Sources */,
 				C7F74EE32B07AD74008267A9 /* HelathTittleListTask.xcdatamodeld in Sources */,
 				C7F74EDD2B07AD74008267A9 /* ViewController.swift in Sources */,
+				C7F74F0A2B080E54008267A9 /* StringExtenison.swift in Sources */,
 				C7F74EFC2B07B665008267A9 /* HealthVM.swift in Sources */,
 				C7F74ED92B07AD74008267A9 /* AppDelegate.swift in Sources */,
 				C7F74EF02B07B041008267A9 /* SelectedHealthTittleDesVC.swift in Sources */,

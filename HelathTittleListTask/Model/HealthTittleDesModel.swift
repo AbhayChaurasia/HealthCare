@@ -35,13 +35,13 @@ struct Resultss: Codable {
 // MARK: - Query
 struct Query: Codable {
    let apiVersion, apiType, topicID: String?
-   let toolID, categoryID, populationID, keyword: JSONNull?
-   let who, age, sex, pregnant: JSONNull?
-   let tobaccoUse, sexuallyActive, category: JSONNull?
+   let toolID, categoryID, populationID, keyword: String?
+   let who, age, sex, pregnant: String?
+   let tobaccoUse, sexuallyActive, category: String?
    let lang: String?
-   let type: JSONNull?
+   let type: String?
    let returnType: String?
-   let callback, healthfinderPage: JSONNull?
+   let callback, healthfinderPage: String?
    let aPiType: String?
 
    enum CodingKeys: String, CodingKey {
@@ -88,7 +88,7 @@ struct Resource: Codable {
    let accessibleVersion: String?
    let relatedItems: RelatedItems?
    let sections: Sections?
-   let moreInfoItems: JSONNull?
+   let moreInfoItems: String?
    let healthfinderLogo: String?
    let healthfinderURL: String?
 
@@ -156,34 +156,4 @@ struct Section: Codable {
        case content = "Content"
    }
 }
-
-// MARK: - Encode/decode helpers
-
-class JSONNull: Codable, Hashable {
-
-   public static func == (lhs: JSONNull, rhs: JSONNull) -> Bool {
-       return true
-   }
-
-   public var hashValue: Int {
-       return 0
-   }
-
-   public init() {}
-
-   public required init(from decoder: Decoder) throws {
-       let container = try decoder.singleValueContainer()
-       if !container.decodeNil() {
-           throw DecodingError.typeMismatch(JSONNull.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for JSONNull"))
-       }
-   }
-
-   public func encode(to encoder: Encoder) throws {
-       var container = encoder.singleValueContainer()
-       try container.encodeNil()
-   }
-}
-
-
-
 

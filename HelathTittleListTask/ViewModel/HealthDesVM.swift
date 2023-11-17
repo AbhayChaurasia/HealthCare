@@ -7,8 +7,7 @@
 
 import Foundation
  
- //typealias JsonFeedCompletionHandler = (RequestStatus) -> Void
-
+ 
  
 
 class HealthDesViewModel {
@@ -18,7 +17,7 @@ class HealthDesViewModel {
     private var title = ""
     
     // MARK: - Method to fetch Rows from Json Feed
-    func fetchHealthDes(completion: @escaping JsonFeedCompletionHandler = { _ in }) {
+    func fetchHealthDes( id : String ,  completion: @escaping JsonHealthCompletionHandler = { _ in }) {
         //!NetworkStatus.sharedInstance.hasConnectivity()
         
         if !(InternetConnectionManager.shared.isInternetAvailable())  {
@@ -26,16 +25,18 @@ class HealthDesViewModel {
             completion(.NetworkError)
         }
         else {
-            networkWorker.getHealthTittleDes(urlString: url) { [weak self] (result) in
+            let titleURL = topicDetailUrl + id
+            networkWorker.getHealthTittleDes(urlString: titleURL) { [weak self] (result) in
                 switch result {
                 case .success(let listOf) :
                     self?.factsData.removeAll()
                     if let tittle = listOf.result?.resources?.resource?.first?.sections?.section {
                         for row in tittle {
-                            //   if let  row  = row {
-                            self?.factsData.append(row)
-                            //  }
+                             self?.factsData.append(row)
+                            
                         }
+                        
+                        
                     }
                     
                     completion(.Success)
@@ -50,29 +51,27 @@ class HealthDesViewModel {
         
         // MARK: - Reset Datasource
     }
+    
     func resetDataSource() {
         self.title = ""
         self.factsData.removeAll()
     }
     
-    // MARK: - Get Title
-    func getTitle() -> String {
-        return "Health Tittle Description"
-    }
     
-    // MARK: - Get Number of Rows
-    func numberOfRowsInSection(section: Int) -> Int {
-        if factsData.count != 0 {
-            return factsData.count
+     
+    
+     
+    
+    func showTittleAndDes () -> Section {
+        if factsData.count > 0 {
+            return factsData[0]
+           
         }
-        return 0
+        else {
+            return Section(title: "", description: "", content: "")
+        }
+        
+       
     }
-    
-    // MARK: - Set Data for Cell
-    func cellForRowAt (indexPath: IndexPath) -> Section {
-        return factsData[indexPath.row]
-    }
-    
-    
 }
 
