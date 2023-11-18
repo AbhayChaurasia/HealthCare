@@ -22,8 +22,7 @@ class HealthViewModel {
     
     // MARK: - Method to fetch Rows from Json Feed
     func fetchHealthTittleRows(completion: @escaping JsonHealthCompletionHandler = { _ in }) {
-        //!NetworkStatus.sharedInstance.hasConnectivity()
-        
+ 
         if !(InternetConnectionManager.shared.isInternetAvailable())  {
             self.resetDataSource()
             completion(.NetworkError)

@@ -24,16 +24,10 @@ struct HealthTittle: Decodable {
 // MARK: - Result
 struct Results: Codable {
     let error: String?
-    let total: Int?
-    // let query: Query?
-    let language: String?
     let items: Items?
     
     enum CodingKeys: String, CodingKey {
         case error = "Error"
-        case total = "Total"
-        // case query = "Query"
-        case language = "Language"
         case items = "Items"
     }
 }

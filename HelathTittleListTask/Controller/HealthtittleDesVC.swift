@@ -32,29 +32,22 @@ class HealthtittleDesVC: UIViewController {
         label.numberOfLines = 0
         return label
     }()
+    let scrollView: UIScrollView = {
+            let scrollView = UIScrollView()
+            scrollView.translatesAutoresizingMaskIntoConstraints = false
+            return scrollView
+        }()
+    let contentView: UIView = {
+           let view = UIView()
+           view.translatesAutoresizingMaskIntoConstraints = false
+           return view
+       }()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .white
-        
-        // Add topic label
-        view.addSubview(topicLabel)
-        NSLayoutConstraint.activate([
-            topicLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            topicLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20)
-        ])
-        
-        // Add description label
-        view.addSubview(descriptionLabel)
-        NSLayoutConstraint.activate([
-            descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            descriptionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            descriptionLabel.topAnchor.constraint(equalTo: topicLabel.bottomAnchor, constant: 20)
-        ])
-        
-        // Set topic name and description
-        
+      
+        self.setUI()
         self.loadDescription()
         self.setData()
         self.setNavigationBarTitle()
@@ -90,9 +83,9 @@ class HealthtittleDesVC: UIViewController {
     }
     // MARK: - Set Navigation Bar Appearance
     private func setNavigationBarTitle() {
-        self.navigationController?.navigationBar.topItem?.title = "Health Topic Description"
-        
-        self.navigationController?.navigationBar.backgroundColor = UIColor.lightGray
+         title = "Health Topic Description"
+        self.navigationController?.navigationBar.backgroundColor = navBarColor
+        self.navigationController?.navigationBar.tintColor = UIColor.white
     }
      func showActivityIndicator() {
         activityIndicator.center = view.center
@@ -101,14 +94,6 @@ class HealthtittleDesVC: UIViewController {
         view.addSubview(activityIndicator)
     }
     
-    // MARK: - Method to stop activity indicator
-    private func stopActivityIndicator() {
-        activityIndicator.hidesWhenStopped = true
-        activityIndicator.stopAnimating()
-    }
-    private func stopUIOperation() {
-        setData()
-        self.stopActivityIndicator()
-        self.refreshControl.endRefreshing()
-    }
+   
 }
+
