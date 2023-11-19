@@ -26,7 +26,7 @@ class HealthDesViewModel {
         }
         else {
             let titleURL = topicDetailUrl + id
-            networkWorker.getHealthTittleDes(urlString: titleURL) { [weak self] (result) in
+            networkWorker.getApiData(urlString: titleURL, resultType: HealthtittlDesModel.self) { [weak self] (result) in
                 switch result {
                 case .success(let listOf) :
                     self?.factsData.removeAll()

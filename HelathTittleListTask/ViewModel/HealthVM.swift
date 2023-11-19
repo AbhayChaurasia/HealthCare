@@ -28,7 +28,11 @@ class HealthViewModel {
             completion(.NetworkError)
         }
         else {
-            networkWorker.getFactsJsonFeed(urlString: url) { [weak self] (result) in
+            
+           
+           
+            
+            networkWorker.getApiData(urlString: url, resultType: HealthTittle.self ) { [weak self] (result) in
                 switch result {
                 case .success(let listOf) :
                     self?.tittleData.removeAll()

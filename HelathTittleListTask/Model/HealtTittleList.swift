@@ -16,11 +16,6 @@ struct HealthTittle: Decodable {
     }
 }
 
-
-
-
-
-
 // MARK: - Result
 struct Results: Codable {
     let error: String?
